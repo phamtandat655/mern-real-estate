@@ -1,0 +1,51 @@
+GET http://localhost:4000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGNlMDI3NmIxMzUzMDhmMzI5NGQ4ODciLCJlbWFpbCI6InBoYW10YW5kYXQ2NTVAZ21haWwuY29tIiwiaWF0IjoxNjkxMjI3MzE2LCJleHAiOjE2OTEyMjczNzZ9.neIoh9LcZOL-dpo7fx48_jEl14R9wuW1jMjrRmsXg30
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "phamtandat378@gmail.com" ,
+  "password" : "123456"
+}
+
+
+###
+
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGNkYmI3MWI5YmRlNzRhMjM0NmY3NGYiLCJlbWFpbCI6InBoYW10YW5kYXQzNzhAZ21haWwuY29tIiwiaWF0IjoxNjkxMjI1OTQ3LCJleHAiOjE2OTEyMjYwMDd9.yI6E6gmxT8uBxXZ3Ytxn6A4rNIU6859JJx2Cr2NxH_4
+
+###
+
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+  "email": "phamtandat655@gmail.com",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGNkYmI3MWI5YmRlNzRhMjM0NmY3NGYiLCJlbWFpbCI6InBoYW10YW5kYXQzNzhAZ21haWwuY29tIiwiaWF0IjoxNjkxNDg0Nzc2LCJleHAiOjE2OTI3ODA3NzZ9.eLOmaKZcuWnVbIlSBcTX4OlErWP8_PvUWMXCs_b32_0"
+}
+
+###
+
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZW5yeSIsImlhdCI6MTYxNTcxNjE5NCwiZXhwIjoxNjE1NzE2NDk0fQ.GwjcMpf5itSfVepLKgnXlOvzkLgrwOhuXfOZVtOctbk
+###
+
+POST http://localhost:4000/user/create
+Content-Type: application/json
+
+{
+  "email": "phamtandat655@gmail.com",
+  "password": "123456",
+  "name": "Pham Tan Dat",
+  "phoneNumber": "0394047655"
+}
+
+###
+GET http://localhost:4000/user
+###
+GET http://localhost:4000/user/64cdbb71b9bde74a2346f74f
+
+
